@@ -5,7 +5,7 @@ def main():
     'costco': {'croissant': 12}
     }
 
-    groceries['target'] = {'sugar cookies',1}
+    groceries['target'] = {'sugar cookies': 1}
     print(groceries)
     print()
 
