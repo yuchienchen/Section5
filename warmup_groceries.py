@@ -12,8 +12,8 @@ def main():
         print(key)
         print(value)
         if key == 'safeway':
-            key['eggs'] = 3
-            key['flour'] = 1
+            value['eggs'] = 3
+            value['flour'] = 1
     
         # for key, value in value.items():
 
