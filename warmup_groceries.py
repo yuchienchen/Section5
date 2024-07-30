@@ -5,11 +5,18 @@ def main():
     'costco': {'croissant': 12}
     }
 
+    # add empty dict
     groceries['target'] = {}
 
     for key, value in groceries.items():
         print(key)
         print(value)
+        if key == 'safeway':
+            key['eggs'] = 3
+            key['flour'] = 1
+    
+        # for key, value in value.items():
+
     print(groceries)
 
         # sub_dict = value
