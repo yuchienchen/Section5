@@ -14,8 +14,8 @@ def main():
         if key == 'safeway':
             value['eggs'] = 3
             value['flour'] = 1
-    
-        # for key, value in value.items():
+        if key == 'target':
+            value['sugar cookies'] = 1        
 
     print(groceries)
 
