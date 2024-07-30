@@ -24,10 +24,13 @@ def add_item(groceries, store, item, num):
     """
     if store not in groceries:
         # YOUR ONE LINE HERE
+        groceries[store] = {}
 
     inner = groceries[store] # access inner dict for store
     if item not in inner:
         # YOUR ONE LINE HERE
+        for item, value in groceries.items():
+            value[item] = num
     # YOUR ONE LINE HERE
 
     return groceries
