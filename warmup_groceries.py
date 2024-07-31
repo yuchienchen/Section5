@@ -5,17 +5,20 @@ def main():
     'costco': {'croissant': 12}
     }
 
-    # add empty dict
-    groceries['target'] = {}
+    store = input("")
 
-    for key, value in groceries.items():
-        print(key)
-        print(value)
-        if key == 'safeway':
-            value['eggs'] = 3
-            value['flour'] = 1
-        if key == 'target':
-            value['sugar cookies'] = 1        
+    # add empty dict
+    if store not in groceries:
+        groceries[store] = {}
+
+    # for key, value in groceries.items():
+    #     print(key)
+    #     print(value)
+    #     if key == 'safeway':
+    #         value['eggs'] = 3
+    #         value['flour'] = 1
+    #     if key == 'target':
+    #         value['sugar cookies'] = 1        
 
     print(groceries)
 
