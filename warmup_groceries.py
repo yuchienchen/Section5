@@ -1,15 +1,16 @@
 def main():
+    # groceries = {
+    # 'safeway': {'eggs': 1, 'coconut milk': 3}, 
+    # 'costco': {'croissant': 12}
+    # }
 
-    groceries = {
-    'safeway': {'eggs': 1, 'coconut milk': 3}, 
-    'costco': {'croissant': 12}
-    }
+    groceries = {}
+    store = input("Please enter a store: ")
 
-    store = input("")
-
-    # add empty dict
-    if store not in groceries:
+    # add empty inner dict
+    while store not in groceries:
         groceries[store] = {}
+        store = input("Please enter a store: ")
 
     # for key, value in groceries.items():
     #     print(key)
