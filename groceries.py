@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import doctest
 
 """
 Stanford CS106A Section Problem
@@ -29,11 +30,13 @@ def add_item(groceries, store, item, num):
     inner = groceries[store] # access inner dict for store
     if item not in inner:
         # YOUR ONE LINE HERE
-        for item, value in groceries.items():
-            value[item] = num
+        # for store, value in groceries.items():
+        inner[item] = num
     # YOUR ONE LINE HERE
-
+    
     return groceries
+
+doctest.testmod(name='add_item')
 
 
 def make_groceries(filename):
