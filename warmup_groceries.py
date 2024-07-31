@@ -9,8 +9,12 @@ def main():
 
     # add empty inner dict
     while store not in groceries:
+        # If the user enters a blank line, break out of the loop and stop asking for input
+        if store == "":
+            break
         groceries[store] = {}
         store = input("Please enter a store: ")
+        
 
     # for key, value in groceries.items():
     #     print(key)
