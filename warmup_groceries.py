@@ -12,8 +12,21 @@ def main():
         # If the user enters a blank line, break out of the loop and stop asking for input
         if store == "":
             break
+
         groceries[store] = {}
         store = input("Please enter a store: ")
+    
+    print(groceries)
+    print(groceries.keys())
+
+    inner = groceries[store]
+    item = input("Please enter an item: ")
+    num = int(input("Please enter a num: "))
+    if item not in inner:
+        if store == 'safeway' and item == 'eggs':
+            inner[item] = num
+        
+    print(groceries)
         
 
     # for key, value in groceries.items():
@@ -25,7 +38,6 @@ def main():
     #     if key == 'target':
     #         value['sugar cookies'] = 1        
 
-    print(groceries)
 
         # sub_dict = value
         # for key, value in sub_dict.items():
